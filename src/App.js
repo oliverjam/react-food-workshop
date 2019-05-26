@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import dishes from "../data";
+
+// const categories = [
+//   "all",
+//   "burger",
+//   "hot dog",
+//   "sandwich",
+//   "fries",
+//   "topping",
+//   "drink",
+//   "extra",
+// ];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <section className="filters">
+        <h1>Burger Place</h1>
+        <h2>Filters</h2>
+        <form>Inputs go here</form>
+      </section>
+      <section className="dishes">
+        <h2>Dishes</h2>
+        <ul className="grid">
+          <li className="card">dishes go here</li>
+        </ul>
+      </section>
+    </main>
   );
 }
 
