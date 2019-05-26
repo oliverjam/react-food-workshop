@@ -77,9 +77,47 @@ Take a look at what data you have available for each dish and try to render it a
 
 ## Part 3: Create price inputs
 
+We want to be able to filter the list of dishes by minimum and maximum price. To do this we'll need to create two [range inputs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range). Create some state to represent the range values.
+
+You can refer back to the [introduction to controlled components](https://github.com/oliverjam/learn-react/blob/master/05-transform-the-form/README.md#controlled-components) if you need to.
+
+You should end up with something like this:
+
+![part 2 example](https://user-images.githubusercontent.com/9408641/58385206-b821ba80-7fe4-11e9-9108-0b0805a34820.png)
+
 ## Part 4: Filter list by price
 
+Now we need to filter our dish list based on the price state.
+
+   <details>
+    <summary>
+    Hint (you can click me)
+    </summary>
+
+Remember our list is a normal JavaScript array. You can manipulate it using any of the array methods you're used to.
+
+   </details>
+
+You should have something like this:
+
+![part 2 example](https://user-images.githubusercontent.com/9408641/58385194-8a3c7600-7fe4-11e9-899d-576e46106f1d.png)
+
 ## Part 5: Modularise your components
+
+Our `App` component is starting to get a bit unwieldy. We've got our state management plus two totally separate bits of the page all rendering in one place. Let's try splitting it up into a couple of smaller components.
+
+Create two new files: `DishList.js` and `PriceFilter.js`. Create new components in each and copy over the respective code from `App.js`. You won't have access to the state you were using in the new files—you'll need to find a way to pass data down to child components from `App`.
+
+Don't forget to export your new components!
+
+  <details>
+    <summary>
+    Hint (you can click me)
+    </summary>
+
+You might want to review the section on [props](https://github.com/oliverjam/learn-react/blob/master/02-component-proponent/README.md#props) from the earlier workshop.
+
+   </details>
 
 ## Part 6: Create radio group
 
