@@ -1,5 +1,5 @@
 import React from "react";
-import dishes from "../../data";
+import dishes from "../data";
 
 function DishList({ catFilter, priceFilter }) {
   const [minPrice, maxPrice] = priceFilter;
