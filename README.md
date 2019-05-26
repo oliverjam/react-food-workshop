@@ -137,7 +137,7 @@ If everything is hooked up correctly you should see something like the gif from 
 
 ![burger-place](https://user-images.githubusercontent.com/9408641/58384401-35473280-7fd9-11e9-80db-1403465ad70f.gif)
 
-## Stretch goals
+## Stretch goals
 
 1. It would be nice if the price filters were constrained by the lowest/highest available price on the page (so you don't end up filtering everything away)
 1. Add a text input that lets users search for dishes by title
