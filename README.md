@@ -81,6 +81,8 @@ We want to be able to filter the list of dishes by minimum and maximum price. To
 
 You can refer back to the [introduction to controlled components](https://github.com/oliverjam/learn-react/blob/master/05-transform-the-form/README.md#controlled-components) if you need to.
 
+It can be a good idea to group and label related elements using the [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) element.
+
 You should end up with something like this:
 
 ![part 3 example](https://user-images.githubusercontent.com/9408641/58385206-b821ba80-7fe4-11e9-9108-0b0805a34820.png)
