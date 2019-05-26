@@ -130,3 +130,15 @@ You'll also need a state value to keep track of which radio is selected. You sho
 ![part 6 example](https://user-images.githubusercontent.com/9408641/58385192-86a8ef00-7fe4-11e9-8b7c-fec1ff5c98b7.png)
 
 ## Part 7: Filter list by category
+
+Now we need to filter our list by category as well as the existing price filters. Use your category state value to filter the array in `DishList`. Make sure you keep the price filter working.
+
+If everything is hooked up correctly you should see something like the gif from the beginning 🎉
+
+![burger-place](https://user-images.githubusercontent.com/9408641/58384401-35473280-7fd9-11e9-80db-1403465ad70f.gif)
+
+## Stretch goals
+
+1. It would be nice if the price filters were constrained by the lowest/highest available price on the page (so you don't end up filtering everything away)
+1. Add a text input that lets users search for dishes by title
+1. Make it look even better 💅
