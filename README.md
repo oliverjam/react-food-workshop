@@ -73,7 +73,7 @@ Uncomment the line importing `"../data.js"`. This is an array of objects, each r
 
 Take a look at what data you have available for each dish and try to render it all. You should end up with something like this:
 
-![part 1 example](https://user-images.githubusercontent.com/9408641/58384685-90c6ef80-7fdc-11e9-80ea-d0d54df5bca0.png)
+![part 2 example](https://user-images.githubusercontent.com/9408641/58384685-90c6ef80-7fdc-11e9-80ea-d0d54df5bca0.png)
 
 ## Part 3: Create price inputs
 
@@ -83,7 +83,7 @@ You can refer back to the [introduction to controlled components](https://github
 
 You should end up with something like this:
 
-![part 2 example](https://user-images.githubusercontent.com/9408641/58385206-b821ba80-7fe4-11e9-9108-0b0805a34820.png)
+![part 3 example](https://user-images.githubusercontent.com/9408641/58385206-b821ba80-7fe4-11e9-9108-0b0805a34820.png)
 
 ## Part 4: Filter list by price
 
@@ -100,7 +100,7 @@ Remember our list is a normal JavaScript array. You can manipulate it using any 
 
 You should have something like this:
 
-![part 2 example](https://user-images.githubusercontent.com/9408641/58385194-8a3c7600-7fe4-11e9-899d-576e46106f1d.png)
+![part 4 example](https://user-images.githubusercontent.com/9408641/58385194-8a3c7600-7fe4-11e9-899d-576e46106f1d.png)
 
 ## Part 5: Modularise your components
 
