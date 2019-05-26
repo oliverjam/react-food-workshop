@@ -6,7 +6,7 @@ We're going to build a simplified food delivery menu page. It'll have a list of 
 
 Don't worry, we'll work our way there step by step.
 
-## Part 0: Project setup
+## Part 1: Project setup
 
 1. Clone this repo
 1. Run `npm install`
