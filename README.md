@@ -121,4 +121,12 @@ You might want to review the section on [props](https://github.com/oliverjam/lea
 
 ## Part 6: Create radio group
 
+We also want to filter our dishes by category. This is a good use-case for a group of radio inputs as the categories are mutually exclusive.
+
+Create a new file called `CategoryFilter.js` and make a new component in it. We need a radio input for each category. You can probably find a way to render the inputs dynamically so you don't have to write 8 radios by hand :)
+
+You'll also need a state value to keep track of which radio is selected. You should end up with something like this:
+
+![part 6 example](https://user-images.githubusercontent.com/9408641/58385192-86a8ef00-7fe4-11e9-8b7c-fec1ff5c98b7.png)
+
 ## Part 7: Filter list by category
