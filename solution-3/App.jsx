@@ -8,7 +8,6 @@ function App() {
     <main>
       <section className="filters">
         <h1>Burger Place</h1>
-        <h2>Filters</h2>
         <form>
           <fieldset>
             <legend>Price</legend>

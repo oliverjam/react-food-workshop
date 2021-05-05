@@ -1,10 +1,9 @@
 import React from "react";
-import dishes from "../data";
+import dishes from "../../data";
 
-function DishList({ catFilter, priceFilter }) {
+function DishList({ priceFilter }) {
   const [minPrice, maxPrice] = priceFilter;
   const dishItems = dishes
-    .filter(dish => catFilter === "all" || catFilter === dish.category)
     .filter(dish => dish.price >= minPrice && dish.price <= maxPrice)
     .map(dish => (
       <li key={dish.id} className="card">
@@ -13,6 +12,8 @@ function DishList({ catFilter, priceFilter }) {
         <div>£{dish.price.toFixed(2)}</div>
       </li>
     ));
+
+  console.log(dishItems);
   return (
     <ul className="grid">
       {dishItems.length ? (
