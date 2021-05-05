@@ -2,7 +2,7 @@
 
 We're going to build a simplified food delivery menu page. It'll have a list of dishes plus a form to filter them. The final result should look something like this:
 
-![burger-place](https://user-images.githubusercontent.com/9408641/58384401-35473280-7fd9-11e9-80db-1403465ad70f.gif)
+![burger-place](./screenshots/7.png)
 
 Don't worry, we'll work our way there step by step.
 
@@ -12,7 +12,7 @@ Don't worry, we'll work our way there step by step.
 1. Run `npm install`
 1. Run `npm run dev` to start the dev server
 
-![initial app](https://user-images.githubusercontent.com/9408641/58384502-2e6cef80-7fda-11e9-9e79-af32561922f0.png)
+![initial app](./screenshots/1.png)
 
 Open `workshop/index.jsx` in your editor. This is where we render our React app to the DOM. You can see that we have a top-level component named `App`. Open `App.jsx` to see what's currently being rendered.
 
@@ -73,7 +73,7 @@ Uncomment the line importing `"../data.js"`. This is an array of objects, each r
 
 Take a look at what data you have available for each dish and try to render it all. You should end up with something like this:
 
-![part 2 example](https://user-images.githubusercontent.com/9408641/58384685-90c6ef80-7fdc-11e9-80ea-d0d54df5bca0.png)
+![part 2 example](./screenshots/2.png)
 
 ## Part 3: Create price inputs
 
@@ -85,7 +85,7 @@ It can be a good idea to group and label related elements using the [fieldset](h
 
 You should end up with something like this:
 
-![part 3 example](https://user-images.githubusercontent.com/9408641/58385206-b821ba80-7fe4-11e9-9108-0b0805a34820.png)
+![part 3 example](./screenshots/3.png)
 
 ## Part 4: Filter list by price
 
@@ -102,7 +102,7 @@ Remember our list is a normal JavaScript array. You can manipulate it using any 
 
 You should have something like this:
 
-![part 4 example](https://user-images.githubusercontent.com/9408641/58385194-8a3c7600-7fe4-11e9-899d-576e46106f1d.png)
+![part 4 example](./screenshots/4.png)
 
 ## Part 5: Modularise your components
 
@@ -129,15 +129,15 @@ Create a new file called `CategoryFilter.jsx` and make a new component in it. We
 
 You'll also need a state value to keep track of which radio is selected. You should end up with something like this:
 
-![part 6 example](https://user-images.githubusercontent.com/9408641/58385192-86a8ef00-7fe4-11e9-8b7c-fec1ff5c98b7.png)
+![part 6 example](./screenshots/6.png)
 
 ## Part 7: Filter list by category
 
 Now we need to filter our list by category as well as the existing price filters. Use your category state value to filter the array in `DishList`. Make sure you keep the price filter working.
 
-If everything is hooked up correctly you should see something like the gif from the beginning 🎉
+If everything is hooked up correctly you should see something like this 🎉
 
-![burger-place](https://user-images.githubusercontent.com/9408641/58384401-35473280-7fd9-11e9-80db-1403465ad70f.gif)
+![burger-place](./screenshots/7.png)
 
 ## Stretch goals
 
