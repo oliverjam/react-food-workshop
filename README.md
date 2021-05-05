@@ -10,15 +10,15 @@ Don't worry, we'll work our way there step by step.
 
 1. Clone this repo
 1. Run `npm install`
-1. Run `npm start` to open the site
+1. Run `npm run dev` to start the dev server
 
 ![initial app](https://user-images.githubusercontent.com/9408641/58384502-2e6cef80-7fda-11e9-9e79-af32561922f0.png)
 
-Open `src/index.js` in your editor. This is where we render our React app to the DOM. You can see that we have a top-level component named `App`. Open `App.js` to see what's being rendered.
+Open `workshop/index.jsx` in your editor. This is where we render our React app to the DOM. You can see that we have a top-level component named `App`. Open `App.jsx` to see what's currently being rendered.
 
 ## Part 2: Render a list
 
-React can render arrays of elements just like a single element. E.g.
+JSX supports multiple child elements like this:
 
 ```jsx
 function App() {
@@ -32,7 +32,7 @@ function App() {
 }
 ```
 
-is the same as:
+This is the same as listing those child elements in an array, like this:
 
 ```jsx
 function App() {
@@ -40,32 +40,32 @@ function App() {
 }
 ```
 
-This isn't very ergonomic, but it comes in very handy when you need to render a dynamic list. We can generate an array from our data and render that:
+This isn't very ergonomic to write by hand, but it comes in handy when you need to render a dynamic list. We can generate an array from some data and render it:
 
 ```jsx
 function App() {
   const fruits = ["Apple", "Orange", "Banana"];
-  const fruitList = fruits.map(fruit => <li key={fruit}>{fruit}</li>);
+  const fruitList = fruits.map((fruit) => <li key={fruit}>{fruit}</li>);
   return <ul>{fruitList}</ul>;
 }
 ```
 
-We're passing a special prop called `key` to the top-level element in our array. This allows React to keep track of where each element is so it doesn't mess up the order. `key` should be unique and not change when the array order does. React will warn you if you forget this.
-
-It's common to inline the `.map()` call:
+It's common to inline the `.map()` (although using a separate named variable is fine if you find it clearer):
 
 ```jsx
 function App() {
   const fruits = ["Apple", "Orange", "Banana"];
   return (
     <ul>
-      {fruits.map(fruit => (
+      {fruits.map((fruit) => (
         <li key={fruit}>{fruit}</li>
       ))}
     </ul>
   );
 }
 ```
+
+We're passing a special prop called `key` to the top-level element in our array. This allows React to keep track of where each element is so it doesn't mess up the order. `key` should be unique and not change when the array order does. React will warn you if you forget this.
 
 ### Task
 
@@ -108,7 +108,7 @@ You should have something like this:
 
 Our `App` component is starting to get a bit unwieldy. We've got our state management plus two totally separate bits of the page all rendering in one place. Let's try splitting it up into a couple of smaller components.
 
-Create two new files: `DishList.js` and `PriceFilter.js`. Create new components in each and copy over the respective code from `App.js`. You won't have access to the state you were using in the new files—you'll need to find a way to pass data down to child components from `App`.
+Create two new files: `DishList.jsx` and `PriceFilter.jsx`. Create new components in each and copy over the respective code from `App.jsx`. You won't have access to the state you were using in the new files—you'll need to find a way to pass data down to child components from `App`.
 
 Don't forget to export your new components!
 
@@ -125,7 +125,7 @@ You might want to review the section on [props](https://github.com/oliverjam/lea
 
 We also want to filter our dishes by category. This is a good use-case for a group of radio inputs as the categories are mutually exclusive.
 
-Create a new file called `CategoryFilter.js` and make a new component in it. We need a radio input for each category. You can probably find a way to render the inputs dynamically so you don't have to write 8 radios by hand :)
+Create a new file called `CategoryFilter.jsx` and make a new component in it. We need a radio input for each category. You can probably find a way to render the inputs dynamically so you don't have to write 8 radios by hand :)
 
 You'll also need a state value to keep track of which radio is selected. You should end up with something like this:
 
